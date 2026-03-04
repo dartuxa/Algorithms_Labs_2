@@ -24,7 +24,7 @@ However, if the function rebinds the local parameter to a new object, it only up
 ## Task D: Default Argument Behavior
 
 Question: Explain why the list keeps growing across multiple function calls. 
-Answer: This happens because default values are evaluated only once—at the time the function is defined, not every time it is called. 
+Answer: This happens because default values are evaluated only once-at the time the function is defined, not every time it is called. 
 Because a list is mutable, the same object is reused across all calls to the function. 
 Each call that modifies the list is affecting that single, persistent default object.
 
