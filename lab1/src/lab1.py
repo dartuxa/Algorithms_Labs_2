@@ -7,7 +7,7 @@ print (f"before rebind, b = {b}")
 print (f"before rebind, a(id) = {id(a)}")
 print (f"before rebind, b(id) = {id(b)}\n")
 
-a = 5
+a = 7
 
 print (f"after rebind, a = {a}")
 print (f"after rebind, b = {b}")
