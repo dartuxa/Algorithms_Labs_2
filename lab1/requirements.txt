@@ -1,5 +1,4 @@
-### Requirements
+Requirements:
 
 Computer
-
 Python 3.10.11
