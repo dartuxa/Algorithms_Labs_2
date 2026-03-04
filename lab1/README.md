@@ -5,12 +5,6 @@
 This laboratory explores the fundamental nature of Python's object model. Instead of traditional variables, the lab demonstrates how names serve as bindings to objects. 
 Through six distinct sections (A-F), the program illustrates the mechanics of rebinding, mutability, function argument passing, and CPython’s memory management (reference counting).
 
-### Requirements
-
-Computer
-
-Python 3.10.11
-
 ### Environment Setup
 
 Follow these steps to set up a virtual environment and install necessary dependencies:
