@@ -35,6 +35,7 @@ The program generates a structured output divided into six sections, demonstrati
 
 
 
+
 A) Binding / Rebinding: Shows how names point to objects and how changing a name's target doesn't affect other names.
 
 B) Mutation vs Rebinding: Compares modifying an object in-place versus pointing a name to a new object.
