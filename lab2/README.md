@@ -1,46 +1,44 @@
 # Lab 02: Expressions & Control Flow in Python
 
-Ця лабораторна робота присвячена практиці використання виразів та структур керування в Python, 
-включаючи механізми truthiness, порівняння об'єктів, розгалуження, генератори та спискові включення.
+This laboratory work is dedicated to practicing Python expressions and control flow, including truthiness mechanisms, object comparison, branching, generators, and comprehensions.
 
-### Системні вимоги
+### System Requirements
 
-- Python version: 3.10 або новіша (використовується оператор match).
+- Python version: 3.10 or newer (required for the match operator).
 
-- Залежності: Зовнішні бібліотеки не потрібні.
+- Dependencies: No external libraries required.
 
-### Структура проєкту
+### Project Structure
 
 ```text
 lab2/
-├── README.md            # інструкції та опис проєкту
-├── requirements.txt     # список залежностей (пустий)
+├── README.md            # Instructions and project description
+├── requirements.txt     # List of dependencies (empty)
 ├── src/                 
-│   └── lab2.py          # лаба
-└── report/              # звіти та пояснення
-    └── answers.md       # відповіді на контрольні запитання
+│   └── lab2.py          # Lab
+└── report/              # Reports and explanations
+    └── answers.md       # Answers to control questions
 ```
 
-### Опис виконаних завдань
+### Task Descriptions
 
+The project consists of the following functional blocks :
 
-Проєкт містить наступні функціональні блоки :
+- Task A (Truthiness): Demonstration of the logical values of various objects (0, None, empty lists, etc.).
 
-- Task A (Truthiness): Демонстрація логічного значення різних об'єктів (0, None, порожні списки тощо).
+- Task B (Identity vs Equality): Examples illustrating the difference between the == and is operators.
 
-- Task B (Identity vs Equality): Приклади різниці між операторами == та is.
+- Task C (Control Flow): Number classification using if-elif logic.
 
-- Task C (Control Flow): Класифікація чисел за допомогою if-elif.
+- Task D (Pattern Matching): Handling events (click, keypress, quit) using the match statement.
 
-- Task D (Pattern Matching): Обробка подій (click, keypress, quit) через match.
+- Task E (Comprehensions): Creating lists of squares and dictionaries using comprehensions.
 
-- Task E (Comprehensions): Створення списків квадратів та словників за допомогою включень.
+- Task F (Generators): Implementation of an even number generator and calculating the sum of squares without creating intermediate lists.
 
-- Task F (Generators): Реалізація генератора парних чисел та обчислення суми квадратів без створення проміжних списків.
+### Execution Instructions
 
-### Інструкція з запуску
-
-Щоб запустити код лабораторної роботи, виконайте наступну команду з кореневої директорії проєкту:
+To run the laboratory work code, execute the following command from the project root directory :
 ```text
 python src/main.py
 ```
