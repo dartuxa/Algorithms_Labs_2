@@ -101,7 +101,7 @@ print("--- Task F - Functional Composition --- \n")
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-pipeline_result = sum((lambda x: x**2)(n) for n in numbers if (lambda x: x % 2 == 0)(n))
+pipeline_result = sum((lambda x: x ** 2)(n) for n in numbers if n % 2 == 0)
 
 print(f"original: {numbers}")
 print()
