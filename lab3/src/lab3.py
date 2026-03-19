@@ -103,9 +103,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
 pipeline_result = sum((lambda x: x ** 2)(n) for n in numbers if n % 2 == 0)
 
-print(f"original: {numbers}")
-print()
-print(f"result: {pipeline_result}")
-print()
+print(f"original: {numbers} \n")
+print(f"result: {pipeline_result} \n")
 
 print("-" * 39)
