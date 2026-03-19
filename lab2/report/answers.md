@@ -17,6 +17,7 @@ Python uses truthiness, where an object's boolean value is determined by its ```
 ### When should ```is``` be used instead of ```==```?
 
 Use == : To check if two objects have the same value.
+
 Use is : To check if two variables point to the exact same object in memory.
 
 ### Why is match convenient for analyzing structured data?
