@@ -40,5 +40,5 @@ The project consists of the following functional blocks :
 
 To run the laboratory work code, execute the following command from the project root directory :
 ```text
-python src/main.py
+python src/lab3.py
 ```
