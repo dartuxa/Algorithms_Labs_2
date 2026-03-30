@@ -40,7 +40,7 @@ To ensure a clean installation of dependencies, follow these steps in your termi
 
 - Create a virtual environment:
 ```
-python src/lab4.py
+python -m venv venv
 ```
 - Activate the environment:
 ```
