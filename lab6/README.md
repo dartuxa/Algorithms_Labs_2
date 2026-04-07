@@ -1,12 +1,12 @@
-# Lab 04: Higher-Order Functions and Decorators
+# Lab 06: Python Object Model and Basic Object Behavior
 
-This project focuses on practicing higher-order functions, functional transformations using ```map``` and ```filter```, and modifying function behavior with decorators.
+This project demonstrates the fundamentals of the Python Object Model using a custom Student class. The implementation covers:
 
 ### System Requirements
 
 - Python version: 3.10 or newer (required for the match operator).
 
-- Dependencies: No external libraries required.
+- Dependencies: mypy.
 
 ### Project Structure
 
@@ -15,7 +15,7 @@ lab4/
 ├── README.md            # Instructions and project description
 ├── requirements.txt     # List of dependencies (empty)
 ├── src/                 
-│   └── lab4.py          # Lab
+│   └── lab6.py          # Lab
 └── report/              # Reports and explanations
     └── answers.md       # Answers to control questions
 ```
@@ -24,23 +24,52 @@ lab4/
 
 The implementation covers the following tasks:
 
-- Task A (Higher-Order Function): Implementation of a custom ```apply(func, data)``` function without using built-in map .
+- Task A : Define the Student class.
 
-- Task B (map): Transforming lists by squaring numbers and converting them to strings .
+- Task B : Inspect internal structure .
 
-- Task C (filter): Filtering lists to keep only even numbers or values greater than 10 .
+- Task C : Implement __str__ .
 
-- Task D (map/filter vs comprehension): Solving the same transformation task using two different Pythonic approaches .
+- Task D : Implement __repr__.
 
-- Task E (Simple Decorator): A ```@call_counter``` decorator that tracks and prints the number of times a function is executed .
+- Task E : Implement equality (__eq__).
 
-- Task F (Decorator with Arguments): A ```@prefix(text)``` decorator that prepends a specific string to the function's return value .
+- Task F : Implement ordering (__lt__) .
 
-- Task G (Caching Decorator): A ```@cache``` decorator used to optimize recursive calculations by storing previously computed results .
+- Task G : Sorting .
 
-### Execution Instructions
+- Task H : Type checking (strict mypy) 
 
-To run the laboratory work code, execute the following command from the project root directory :
+### Environment Setup
+
+To ensure a clean installation of dependencies, follow these steps in your terminal:
+
+- Create a virtual environment:
 ```
-python src/lab4.py
+python -m venv venv
+```
+- Activate the environment:
+```
+venv\Scripts\activate
+```
+- Install required packages:
+```
+pip install -r requirements.txt
+```
+
+### Running the Project
+
+Execute the Code
+
+To run the main program and see the task demonstrations, use:
+```
+python src/lab5.py
+```
+
+Static Type Checking
+
+The project is designed to pass strict type checking. Run the following command to verify:
+
+```
+mypy --strict src/
 ```
