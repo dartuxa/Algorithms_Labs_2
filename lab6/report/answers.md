@@ -1,4 +1,4 @@
-### 1. What is stored in ```obj.__dict__```?
+## 1. What is stored in ```obj.__dict__```?
 
 It is a dictionary that stores all of an object's writable attributes. 
 Each key is the attribute name, and the value is the current data assigned to that attribute .
