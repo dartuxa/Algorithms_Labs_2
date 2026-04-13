@@ -1,4 +1,4 @@
-# Lab 06: Python Object Model and Basic Object Behavior
+# Lab 07 - Behavior, Protocols, ABC, Dataclasses, Slots
 
 This project demonstrates the fundamentals of the Python Object Model using a custom Student class. The implementation covers:
 
@@ -11,11 +11,11 @@ This project demonstrates the fundamentals of the Python Object Model using a cu
 ### Project Structure
 
 ```text
-lab6/
+lab7/
 ├── README.md            # Instructions and project description
 ├── requirements.txt     # List of dependencies (empty)
 ├── src/                 
-│   └── lab6.py          # Lab
+│   └── lab7.py          # Lab
 └── report/              # Reports and explanations
     └── answers.md       # Answers to control questions
 ```
@@ -24,35 +24,32 @@ lab6/
 
 The implementation covers the following tasks:
 
-- Task A : Define the Student class.
+- Task A : Regular class (duck typing).
 
-- Task B : Inspect internal structure .
+- Task B : Dataclass implementation.
 
-- Task C : Implement __str__ .
+- Task C : Slots.
 
-- Task D : Implement __repr__.
-
-- Task E : Implement equality (__eq__).
-
-- Task F : Implement ordering (__lt__) .
-
-- Task G : Sorting .
-
-- Task H : Type checking (strict mypy) 
+- Task D : ABC version.
 
 ### Environment Setup
 
 To ensure a clean installation of dependencies, follow these steps in your terminal:
 
 - Create a virtual environment:
+
 ```
 python -m venv venv
 ```
+
 - Activate the environment:
+
 ```
 venv\Scripts\activate
 ```
+
 - Install required packages:
+
 ```
 pip install -r requirements.txt
 ```
@@ -63,7 +60,7 @@ Execute the Code
 
 To run the main program and see the task demonstrations, use:
 ```
-python src/lab6.py
+python src/lab7.py
 ```
 
 Static Type Checking
@@ -73,3 +70,5 @@ The project is designed to pass strict type checking. Run the following command 
 ```
 mypy --strict src/
 ```
+
+It should give one error about Task C but we expect that.
