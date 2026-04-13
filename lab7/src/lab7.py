@@ -28,6 +28,12 @@ student_a = StudentRegular("Roman Malakhov", "KN-124", 98.5)
 export(student_a)
 
 print()
+print()
+print("What do we see?: Object succesfully serialized through the function 'export'.")
+print()
+print("Why does it work?: Because of 'duck typing', Python does not indicate obvious inheritance. Functions 'export' is sufficient if the object has a serialize() method, as Protocol.")
+
+print()
 
 
 
@@ -45,6 +51,12 @@ class StudentData:
 
 student_b = StudentData("Vlad Savchenko", "KN-124", 99.9)
 export(student_b)
+
+print()
+print()
+print("What do we see?: The object behaves just like the primary class, but the code looks significantly cleaner (less boilerplate code).")
+print()
+print("Why does it work?: The @dataclass decorator automatically generates an __init__ method, and our implementation of the serialize() method is completely satisfied with Protocol.")
 
 print()
 
@@ -73,6 +85,13 @@ except AttributeError as e:
     print(f"Error while adding attribute : {e}")
 
 print()
+print()
+print("What do we see?: Protocol is still running, but when trying to add a new attribute 'new_attribute' it throws AttributeError.")
+print()
+print("Why does it work?: The 'slots=True' wiki is used to create a dynamic dictionary '__dict__' for an object. This strictly demarcates the structure of the object with significant fields and saves memory.")
+
+
+print()
 
 
 
@@ -95,5 +114,13 @@ class StudentABC(SerializableABC):
 
 student_d = StudentABC("Glib Gazin", "KN-124", 95.5)
 export(student_d)
+
+print()
+print()
+print("What do we see?: The object successfully operates both with the export() (Protocol) function and as an ABC-based interface.")
+print()
+print("Why does it work?: The class clearly inherits from SerializableABC and implements the abstract serialize() method. This shows that one and the same class can be satisfied with both structural typing (Protocol) and contract through inheritance (ABC).")
+
+
 
 print()
