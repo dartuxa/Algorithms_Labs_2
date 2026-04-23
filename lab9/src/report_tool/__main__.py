@@ -15,7 +15,7 @@ def show_help():
 
 
 def example_workflow():
-    text = "4, 8, 15, 16, 23, 42"
+    text = "15, 8, 4, 16, 23, 42"
     numbers = parse_numbers(text)
     stats = analyze_numbers(numbers)
     report = build_sorted_report(numbers, stats)
