@@ -19,8 +19,8 @@ lab09/report_tool
 │   └── report_tool/
 │       ├── __init__.py
 │       ├── __main__.py
-│       ├── helpers.py
-│       ├── textstuff.py
+│       ├── functions.py
+│       ├── report_output.py
 │       └── saveit.py
 └── report/
     └── report.md
