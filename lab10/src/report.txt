@@ -1,0 +1,8 @@
+number report
+--------------------
+count = 4
+sum = 10.5
+min = 1.0
+max = 4.5
+mean = 2.62
+sorted = [1.0, 2.0, 3.0, 4.5]
